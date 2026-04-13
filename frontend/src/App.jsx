@@ -151,10 +151,10 @@ function App() {
               <thead className="bg-[#f0f0f0]">
                 <tr className="border-b border-[#e5e7eb]">
                   <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px] whitespace-nowrap">Applied on</th>
-                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px]">Name</th>
-                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px]">Type</th>
-                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px]">Purpose</th>
-                  <th className="p-2.5 text-[#111] font-bold text-[14px]">Remarks</th>
+                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px] whitespace-nowrap">Name</th>
+                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px] whitespace-nowrap">Type</th>
+                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px] whitespace-nowrap">Purpose</th>
+                  <th className="p-2.5 text-[#111] font-bold text-[14px] whitespace-nowrap">Remarks</th>
                 </tr>
               </thead>
               <tbody>
@@ -162,16 +162,16 @@ function App() {
                   <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px] whitespace-nowrap">
                     {formatDisplayDate(formData.date)}
                   </td>
-                  <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px] whitespace-nowrap max-w-[300px]">
+                  <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px] whitespace-nowrap">
                     {formData.name}({formData.uid})
                   </td>
                   <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px] whitespace-nowrap">
                     {formData.leaveType}
                   </td>
-                  <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px]">
+                  <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px] whitespace-nowrap">
                     {formData.reason}
                   </td>
-                  <td className="p-2.5 align-top">
+                  <td className="p-2.5 align-top whitespace-nowrap">
                     <span className="text-[#1d4ed8] hover:text-[#1e40af] cursor-pointer text-[13px] font-medium">
                       {formData.statusMessage}
                     </span>
@@ -197,10 +197,10 @@ function App() {
               <thead className="bg-[#f0f0f0]">
                 <tr className="border-b border-[#e5e7eb]">
                   <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px] whitespace-nowrap">Applied on</th>
-                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px]">Name</th>
-                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px]">Type</th>
-                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px]">Purpose</th>
-                  <th className="p-2.5 text-[#111] font-bold text-[14px]">Remarks</th>
+                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px] whitespace-nowrap">Name</th>
+                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px] whitespace-nowrap">Type</th>
+                  <th className="p-2.5 border-r border-[#e5e7eb] text-[#111] font-bold text-[14px] whitespace-nowrap">Purpose</th>
+                  <th className="p-2.5 text-[#111] font-bold text-[14px] whitespace-nowrap">Remarks</th>
                 </tr>
               </thead>
               <tbody>
@@ -209,8 +209,8 @@ function App() {
                     <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px] whitespace-nowrap">{formatDisplayDate(record.date)}</td>
                     <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px] whitespace-nowrap">{record.name}({record.uid})</td>
                     <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px] whitespace-nowrap">{record.leaveType}</td>
-                    <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px]">{record.reason}</td>
-                    <td className="p-2.5 align-top text-[13px]"><span className="text-[#1d4ed8] font-medium">{record.statusMessage}</span></td>
+                    <td className="p-2.5 border-r border-[#e5e7eb] align-top text-[#333] text-[13px] whitespace-nowrap">{record.reason}</td>
+                    <td className="p-2.5 align-top text-[13px] whitespace-nowrap"><span className="text-[#1d4ed8] font-medium">{record.statusMessage}</span></td>
                   </tr>
                 ))}
               </tbody>
